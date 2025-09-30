@@ -44,7 +44,7 @@ local function createKeyUI()
     KeyInput.Size = UDim2.new(0, 250, 0, 30)
     KeyInput.Font = Enum.Font.Gotham
     KeyInput.PlaceholderText = "Enter your key here..."
-    KeyInput.Text = ""
+    KeyInput.Text = ""or
     KeyInput.TextColor3 = Color3.fromRGB(255, 255, 255)
     KeyInput.TextSize = 14.000
     

